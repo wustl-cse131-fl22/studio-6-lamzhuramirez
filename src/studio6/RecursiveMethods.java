@@ -12,9 +12,14 @@ public class RecursiveMethods {
 	 *         ...)
 	 */
 	public static double geometricSum(int n) {
-		
-			// FIXME compute the geometric sum for the first n terms recursively
+		if (n==0)
+		{
 			return 0;
+		}
+		else
+		{
+			return Math.pow(0.5, n) + geometricSum(n-1);
+		}
 		
 	}
 
